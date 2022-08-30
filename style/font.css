@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(./../asset/font/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(./../asset/font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(./../asset/font/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(./../asset/font/Roboto-Bold.ttf);
+}
