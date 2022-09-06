@@ -6,52 +6,68 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <link rel="stylesheet" href="./style/font.css">
         <link rel="stylesheet" href="./style/maintask.css"/>
+        <link rel="stylesheet" href="./style/maintaskproduct.css"/>
         <title>
             HTML CSS Main task
         </title>
-    </head>
+     </head>
     <body>
 
         <!-- Navigation bar -->
 
         <header>
-              <nav>
-                <div class="hamburger">
-                   <img src="./asset/images/hamburger-menuhamburger-menu.svg" alt="hamburger"/> 
+          <nav>
+            <div class="hamburger">
+                <nav class="navbar">
+                <div class="ham">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
                 </div>
-                <div class="logo">
-                 <div class="icon">
-                     <img src="./asset/images/icon.png" alt="candleaficon"/>
-                 </div>
-                  <div class="candleaf">
-                     <p>Candleaf</p>
-                     </div>
-                  </div>
-                <div class="navitem">
-                    <ul>
-                    <li><div class="headerlogo">
-                        <div class="description"><b>Discovery</b></div>
-                        <div class="navitemimage"><img src="./asset/images/Vectordropdown.png" class="dropdown " alt="dropdown"></div>
-                        </div>
-                    </li>
-                    <li><b>About</b></li>
-                    <li><b>Contact us</b></li>
-                    </ul>
-                </div>
-                <div class="profile">
-                    <ul>
-                    <li><div class="profileimage"><img src="./asset/images/Vector.png" alt="profile"/></div></li>
-                    <li><div class="cartimage"><img src="./asset/images/Vectorcart.png" alt="cart"></div></li>
-                    </ul>
-                </div>
+              <ul class="nav-sub">  
+                <li class="list-item"><a href="#" class="nav-link"><img src="./asset/images/Vectordropdown.png"/>Discovery</a></li>  
+                <li class="list-item"><a href="#" class="nav-link">About</a></li>  
+                <li class="list-item"><a href="#" class="nav-link">Contact us</a></li>  
+               </ul> 
+               </nav>
             </div>
-         </nav>
-         </header>
+            <div class="logo">
+                 <img src="./asset/images/logo.svg" alt="candleaficon"/>
+              </div>
+            <div class="navmenu">
+                <ul>
+                <li class="navitem"><div class="headerlogo">
+                   <div class="description"><a href="#"><b>Discovery</b></a></div>
+                    <div class="navitemimage"><img src="./asset/images/Vectordropdown.png" class="dropdown " alt="dropdown"></div>
+                    </div>
+                </li>
+                <li class="navitem"><a href="#"><b>About</b></a></li>
+                <li class="navitem"><a href="#"><b>Contact us</b></a></li>
+                </ul>
+            </div>
+            <div class="profile">
+                <ul>
+                <li><div class="profileimage"><img src="./asset/images/Vector.png" alt="profile"/></div></li>
+                <li><div class="cartimage"><img src="./asset/images/Vectorcart.png" alt="cart">
+                  <div class=cart-gfg>
+                      <div class="cart-increment-decrement-container">
+                          <input type="text" class="cart-num" name="cart-quantity" value="0" maxlength="2" max="10" size="1"
+                          id="cart-number"/>
+                      </div>
+                  </div></li>
+                </ul>
+             </div>
+          </div>
+        </nav>
+    </header>
+
+    <!-- Sample 1-Desktop -->
+
          <main>
             <section class="sample1">
-                <div class="sample1-container-left">
-                  <div class="sample1-image">
-                    <img src="/asset/images/imagecup.png">
+                <div class="sample1containerleft">
+                  <div class="sample1image">
+                    <img src="" alt="image" id="change-image"/>
                   </div>
                   <div class="handmade">
                     <p>All hand-made with natural soy wax, Candleaf is made for your pleasure moments.</p>
@@ -59,49 +75,127 @@
                   </div>
                 </div>
                 <div class="right">
-                  <div class="spice">
-                    <h3>Spiced Mint Candleaf®</h3>
+                  <div class="heading">
+                    <h3 id="candleaf-brandName"></h3>
                   </div>
-                  <div class="div1">
+                  <div class="total">
                     <div class="price">
-                    <div class="dollar"><h4>$ 9.99</h4>
+                    <div id="dollar">
+                      <p id="candleaf-price"></p>
                  </div>
-                    </div>
                   <div class="quantity-box">
                     <div>
                       <p>Quantity</p>
                     </div>
-                    <div>
-                      <img src="/asset/images/placeholder.png">
+                    <div class="wrapper">
+                      <span class="plus">+</span>
+                      <span class="num">0</span>
+                      <span class="minus">-</span>
                     </div>
                   </div>
-                  <div class="purchase">
-                    <div class="one-time">
-                      <input type="radio" value="html">
-                      <label for="html">One time purchase</label>
+                  </div>
+                  <div class="checkbox">
+                    <div class="ff">
+                    <div class="checkbox-1">
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">One time purchase</label><br>
                     </div>
                     <div class="box">
-                      <div class="box2">
-                        <input type="radio" value="html">
-                        <label for="html">Subsribe and delivery every</label><br>
-                        <select name="sub" id="subs">
-                          <option value="name">4 weeks</option>
-                          <option value="name1">3 weeks</option>
-                          
+                      <div class="checkbox-2">
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">Subscribe and delivery every  <select name="cars" id="cars">
+                          <option value="4 Weeks">4 Weeks</option>
+                          <option value="3 Weeks">3 Weeks</option>
+                          <option value="2 Weeks">2 Weeks</option>
+                          <option value="1 Weeks">1 Week</option>
                         </select>
-                       
+                        </div> 
+                      </label><br>
+                      <div class="discount">
+                        <p>Subscribe now and get the 10% of discount on every recurring order.  The discount will be applied at checkout.<span class="green-text"> See details</span></p>
                       </div>
-          
                     </div>
-                    <div class="box-model">
-                      <p><b>Wax</b>: Top grade Soy wax that delivers a smoke less,  consistent burn</p>
-                      <p><b>Fragrance</b>: Premium quality ingredients with natural essential oils </p>
-                      <p><b>Burning Time</b>: 70-75 hours <b>Dimension</b>: 10cm x 5cm <b>Weight</b>: 400g</p> 
+                    </div>
+                    <div class="buttoncart">
+                      <button type="button" class="primary-btn" onclick="cartincrementValue()">
+                        <img src="/asset/images/Vectorcart.svg"> Add to cart</button>
+                    </div>
+                    </div>
+                    </div>
+                     <div class="box-model">
+                      <p><b>Wax</b>:<span class="col-change">Top grade Soy wax that delivers a smoke less,  consistent burn</span></p>
+                      <p><b>Fragrance</b>:<span class="col-change">Premium quality ingredients with natural essential oils </span></p>
+                      <p><b>Burning Time</b>: <span class="col-change">70-75 hours </span><b>Dimension</b>: <span class="col-change">10cm x 5cm</span> <b>Weight</b>:<span class="col-change">400g</span></p> 
+                    </div> 
+                  </div>
+                </section>
+         </main>
+                <!-- Sample-1-Mobile -->
+                <section class="sample1mobile">
+                  <div class="heading">
+                    <h3 id="candleaf-brandName1"></h3>
+                  </div>
+                  <div class="sampleimagemobile">
+                    <img src="" style="width:100%;"alt="image" id="change-image1"/>
+                  </div>
+                  <div class="price">
+                    <div class="dollar">
+                      <p id="candleaf-price1"></p>
+                    </div>
+                  <div class="quality-box">
+                    <div>
+                      <p>Quantity</p>
+                    </div>
+                    <div class="wrapper">
+                      <span class="plus1">+</span>
+                      <span class="num1">0</span>
+                      <span class="minus1">-</span>
                     </div>
                   </div>
-                </div>
-                </div>
-         </main>
+                  </div>
+                  <div class="checkbox">
+                    <div class="ff">
+                    <div class="checkbox-1">
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">One time purchase</label><br>
+                    </div>
+                    <div class="box">
+                      <div class="checkbox-2">
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">Subscribe and delivery every  <select name="cars" id="cars">
+                          <option value="4 Weeks">4 Weeks</option>
+                          <option value="3 Weeks">3 Weeks</option>
+                          <option value="2 Weeks">2 Weeks</option>
+                          <option value="1 Weeks">1 Week</option>
+                        </select>
+                        </div> 
+                      </label><br>
+                      <div class="discount">
+                        <p>Subscribe now and get the 10% of discount on every recurring order.  The discount will be applied at checkout.<span class="green-text"> See details</span></p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="buttoncart">
+                      <button type="button" class="primary-btn" onclick="cartincrementValue()">
+                        <img src="/asset/images/Vectorcart.svg"> Add to cart</button>
+                    </div>
+                    </div>
+                    </div>
+                     <div class="box-model">
+                      <p><b>Wax</b>:<span class="col-change">Top grade Soy wax that delivers a smoke less,  consistent burn</span></p>
+                      <p><b>Fragrance</b>:<span class="col-change">Premium quality ingredients with natural essential oils </span></p>
+                      <p><b>Burning Time</b>: <span class="col-change">70-75 hours </span></p>
+                      <p><b>Dimension</b>: <span class="col-change">10cm x 5cm</span></p>
+                      <p><b>Weight</b>:<span class="col-change">400g</span></p> 
+                    </div> 
+                  </div>
+                  <div class="handmade">
+                    <p>All hand-made with natural soy wax, Candleaf is made for your pleasure moments.</p>
+                    <p> 🚚 FREE SHIPPING</p>
+                  </div>
+                </section>
+                <!--Footer-->
+
          <section class="footer">
             <div class="footertop">
             <div class="footerleft">
@@ -117,7 +211,7 @@
                     <p>Your natural candle made for your home and for your wellness.</p>
                  </div>
                  </div>
-             <div class="navfooter">
+                     <div class="navfooter">
                      <ul class="discovery">
                         <!-- <div class="order1"> -->
                             <ul>
@@ -151,8 +245,7 @@
                </div>
             </div>
         </section>
-
-
-
-
+         <script src="./style/cart.js"></script>
+         <script src="./style/index.js"></script>
     </body>
+</html>

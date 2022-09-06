@@ -22,16 +22,22 @@ nav{
     align-items: center;
     font-size: medium;
 }
-
+.navbar{
+    display: flex;
+    top:0;
+    height:50px;
+    width:70px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+/* .nav-sub{
+    display: flex;
+} */
 .hamburger{
     display: none;
+    cursor:pointer;
 }
-
-.logo{
-    display:grid;
-    grid-template-columns: 45px 40px;
-    align-items: center;
-    }
 .icon{
     width: 100%;
 }
@@ -40,10 +46,6 @@ nav{
 }
 .headerlogo{
     display: flex;
-}
-.candleaf{
-    font-size: x-large;
-    color:var(--green);
 }
 nav li{
     list-style: none;
@@ -62,9 +64,9 @@ nav li{
 .navitemimage img{
     width:100%;
 }
-/* .profile li{
-    display:inline-flex;
-} */
+.profile li{
+    display: inline-flex;
+}
 .profileimage{
     width:100%;
 }
@@ -77,23 +79,42 @@ nav li{
 .cartimage img {
     width:100%;
 }
+   .list-item {  
+    padding:10px;  
+    list-style:none;
+    cursor: pointer;  
+   }  
+   .nav-link{  
+    transition: 0.7s ease;
+    text-decoration:none;  
+   }  
+   .bar{  
+    display:block;  
+    width:35px;  
+    height:3px;  
+    margin:5px auto;  
+    background-color:#101010;  
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+   }
+   
 /* section-Background */
 
 .bgimage{
     width:100%;
-    height: 44rem;;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url('./../asset/images/bg-image.png') ;
-    background-size:auto auto ;
+    background-size:cover;
     background-position:contain;
     background-repeat: no-repeat;
  }
 
 .bgflex{
     margin:4%;
-    height:23rem;
+    height:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -199,7 +220,7 @@ button{
     display: none;
 }
 
-.card,.card2{
+.card{
     font-family: 'Poppins';
     font-weight: 500;
     font-size: 16px;
@@ -213,7 +234,18 @@ button{
     border-radius: 3px;
     background-color:#f7f8fa;  
 }
-
+.card-image{
+    width:100%;
+}
+.card-image img{
+    width:100%;
+}
+.card2-image{
+    width:100%;
+}
+.card2-image img{
+    width:100%;
+}
 .seemore{
         display: none;
 }
@@ -299,7 +331,9 @@ button{
 .right{
     width:100%;
 }
-
+.right img{
+    width:100%;
+}
 .mobilecontainer3{
     display: none;
 }
@@ -371,10 +405,6 @@ button{
     align-items: center;
 }
 
-.rating:hover{
-     background-color: olivedrab;
-}
-
 .remarkquote{
 
     font-weight: 500;
@@ -403,12 +433,13 @@ button{
     font-size: 40px;
     line-height: 58px;
 }
+
 .populardescription{
-        text-align: center;
-        margin-top:2%;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 28px;
+    text-align: center;
+    margin-top:2%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
 }
 
 .popularcard{
@@ -432,7 +463,6 @@ button{
     background-color:#f7f8fa; 
     margin:3% 0%;
 }
-
 
 /* Section-Footer */
 
@@ -480,14 +510,10 @@ button{
     font-weight: 500;
     font-size: 16px;
     line-height: 29px;
-    /* display:grid;
-    grid-template-columns:100% 100% 100%;
-    /* padding:0% 10%;  */
     display: flex;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    /* list-style: none; */
 }
 
 .discovery > ul{
@@ -515,151 +541,57 @@ button{
     margin:15px 0%;
 }
 
-.sample1-image{
-    margin-left: 20px;
-    background-color: rgb(230, 222, 222);
-
-}
-.sample-image{
-     position: absolute;  
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    bottom:30rem;
-    left:40rem;
-    
-}
-.sample1{
-    width: 100%;
-    height: 721px;
-    display: flex;
-    padding: 2%;
-}
-.handmade{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.handmade>p:nth-child(1){
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 28px;
-    color:black;
-    width: 75%;
-    text-align: center;
-    font-family: 'Poppins-Regular';
-    padding:4%;
-}
-.handmade>p:nth-child(2){
-    padding: 20px;
-    font-weight: 80%;
-    font-family: 'Helvetica';
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    color:#56B280;
-
-}
-.quantity-box{
-    display: flex;
-    flex-direction: row;
-}
-.box-model{
-    width:500px;
-    height:100px;
-    border:1px solid grey;
-    margin: 0 auto;
-}
-.box-model p{
-    padding:6px 6px;
-}
-.spice>h3{
-padding:5px;
-font-family: Poppins;
-font-size: 26px;
-text-align: left;
-
-}
-.dollar>h4{
- font-family: Poppins;
-font-size: 25px;
-font-weight: 600;
-padding:5px;
-text-align: left;
-color: #56B280;
-height: 59px;
-width: 539px;
-left: 736px;
-top: 180px;
-}
-.quantity-box{
-width: 50%;
-display: flex;
-flex-direction: column;
-padding:2% 1%;
-}
-.quantity-boxp:nth-child(1){
-    font-size: 20px;
-    font-weight: 400px;
-}
-.purchase{
-    display: flex;
-    flex-direction: column;
-}
-.box{
-    width: 50%;
-   border: 1px solid grey;
-   padding: 5px;
-   margin: 20px;
-   border-radius: 10px;
-}
-.sample-image-2{
-    position: absolute;  
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    left:40rem;
-    bottom:27rem;
-}
-.sample-image-3{
-    position: absolute;  
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    left:47rem;
-    bottom:18rem;
-}
-.sample-image-4{
-    position: absolute;  
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    left:47rem;
-    bottom:15rem;
-}
-.sample-image-5{
-    position: absolute;  
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    left:38rem;
-    bottom:5rem;
-}
 
 /* TABLET */
 
 @media screen and (max-width:768px){
     .hamburger{
-        display:block;
+        display: block;
     }
-
-    .navitem{
-        display:none;
+    .ham.active .bar:nth-child(2){
+        opacity: 0;
     }
-
+    .ham.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .ham.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-sub{
+        width:100%;
+        position:fixed;    
+        left:-100%;
+        top:70px;
+        gap:0;
+        display: flex;
+        flex-direction:column;  
+        background-color:white;  
+        color: var(--green);
+        Font-family: Roboto;
+        Font-style: Regular;
+        Font-size: 24px;
+        Line-height: 28px;
+        z-index:10;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-item{
+        margin:16px 0;
+    }
+    .nav-sub.active{
+        left:0;
+    }
+    .ham{
+        display: block;
+    }
+    .navmenu{
+        display: none;
+    }
+    .bgimage{
+        width:100%;
+        height:auto;
+        position: relative;
+    }
     .content{
         width:90%;
         text-align:center;
@@ -675,9 +607,11 @@ padding:2% 1%;
     button{
         width:100%;
     }
+
     .seemore{
         display: none;
     }
+
     .container3{
         display:none;
     }
@@ -705,6 +639,7 @@ padding:2% 1%;
         line-height: 29px;
         padding:0 10%;
     }
+
     .container-4{
         width: 100%;
         display: flex;
@@ -727,6 +662,7 @@ padding:2% 1%;
         padding: 4rem ;
         margin: 0px 15px;
       }
+
       .star{
         display:inline-flex;
       }
@@ -736,6 +672,7 @@ padding:2% 1%;
         flex-direction: column;
         justify-content: space-between;
     }
+
     .navfooter{
         width:100%;
     }
@@ -753,19 +690,14 @@ padding:2% 1%;
         display:block;
 
     }
-
-    .navitem{
-        display: none;
-    }
-
     .profile{
-        margin-left:40px;
+        margin-left:20px;
     }
-
 
     /* Background */
 
     .bgimage{
+        margin-top: 40px;
         width:100%;
         background-image: url('/asset/images/bg-imagemobile.png');
         display: flex;
@@ -773,13 +705,12 @@ padding:2% 1%;
         justify-content: center;
         align-items: center; 
         background-repeat: no-repeat;
-         background-size:100%;
+        background-size:100%;
         background-position:initial;
     }
 
     .bgflex{
         width:90%;
-        height:30rem;
     }
 
     .content{
@@ -819,6 +750,7 @@ padding:2% 1%;
     .seemore{
         display:block;
     }
+
     /*footer*/
 
     .footertop{
@@ -832,10 +764,9 @@ padding:2% 1%;
     .discovery{
         width:50%;
         order:1;
-        font-size: 16px;;
+        font-size: 16px;
     }
     .about{
-
         width:40%;
         order:3;
         font-size: 16px;

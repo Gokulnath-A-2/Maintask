@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <link rel="stylesheet" href="./style/font.css">
         <link rel="stylesheet" href="./style/maintask.css"/>
+        <!-- <script src="./style/index.js"></script> -->
         <title>
             HTML CSS Main task
         </title>
@@ -17,36 +18,43 @@
         <header>
               <nav>
                 <div class="hamburger">
-                   <img src="./asset/images/hamburger-menuhamburger-menu.svg" alt="hamburger"/> 
+                    <nav class="navbar">
+                    <div class="ham">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    </div>
+                  <ul class="nav-sub">  
+                    <li class="list-item"><a href="#" class="nav-link"><img src="./asset/images/Vectordropdown.png"/>Discovery</a></li>  
+                    <li class="list-item"><a href="#" class="nav-link">About</a></li>  
+                    <li class="list-item"><a href="#" class="nav-link">Contact us</a></li>  
+                   </ul> 
+                   </nav>
                 </div>
                 <div class="logo">
-                 <div class="icon">
-                     <img src="./asset/images/icon.png" alt="candleaficon"/>
-                 </div>
-                  <div class="candleaf">
-                     <p>Candleaf</p>
-                     </div>
+                     <img src="./asset/images/logo.svg" alt="candleaficon"/>
                   </div>
-                <div class="navitem">
+                <div class="navmenu">
                     <ul>
-                    <li><div class="headerlogo">
-                        <div class="description"><b>Discovery</b></div>
+                    <li class="navitem"><div class="headerlogo">
+                       <div class="description"><a href="#"><b>Discovery</b></a></div>
                         <div class="navitemimage"><img src="./asset/images/Vectordropdown.png" class="dropdown " alt="dropdown"></div>
                         </div>
                     </li>
-                    <li><b>About</b></li>
-                    <li><b>Contact us</b></li>
+                    <li class="navitem"><a href="#"><b>About</b></a></li>
+                    <li class="navitem"><a href="#"><b>Contact us</b></a></li>
                     </ul>
                 </div>
                 <div class="profile">
                     <ul>
                     <li><div class="profileimage"><img src="./asset/images/Vector.png" alt="profile"/></div></li>
-                    <li><div class="cartimage"><img src="./asset/images/Vectorcart.png" alt="cart"></div></li>
+                    <li><div class="cartimage"><img src="./asset/images/Vectorcart.png" alt="cart">
+                    </li>
                     </ul>
                 </div>
             </div>
-         </nav>
-         </header>
+        </nav>
+        </header>
 
          <!-- Section-Background -->
 
@@ -84,27 +92,31 @@
           </div>
             <div class="productcard">
                 <div class="card" >
-                    <a href="http://127.0.0.1:5500/maintaskproduct.html" target="_blank"><img src="./asset/images/image 1spicedmint.svg" alt="Spiced-mint"/></a>
+                    <div class= "card-image"><img src="./asset/images/image 1spicedmint.svg" alt="Spiced-mint"/></a></div>
                      <div class="container">
                         <p>Spiced Mint</p>
                         <p>9.99$</p>
                     </div>
                 </div>
                 <div class="card" >
-                    <a href="http://127.0.0.1:5500/maintaskproduct.html" target="_blank"><img src="./asset/images/image 1strawberry.svg" alt="strawberry"/></a>                     <div class="container">
+                    <div class="card-image">
+                    <img src="./asset/images/image 1strawberry.svg" alt="strawberry"/></div>
+                        <div class="container">
                         <p>Sweet Strawberry</p>
                         <p>9.99$</p>
                     </div>
                 </div>
                 <div class="card" >
-                    <a href="http://127.0.0.1:5500/maintaskproduct.html" target="_blank"><img src="./asset/images/image 1blueberry.svg" alt="Blueberry"></a>
+                    <div class="card-image">
+                    <img src="./asset/images/image 1blueberry.svg" alt="Blueberry"></div>
                      <div class="container">
                         <p>Cool Blueberries</p>
                         <p>9.99$</p>
                     </div>
                 </div>
                 <div class="card" >
-                    <a href="http://127.0.0.1:5500/maintaskproduct.html" target="_blank"><img src="./asset/images/image 1lemon.svg" alt="lemon"/></a>
+                    <div class="card-image">
+                    <img src="./asset/images/image 1lemon.svg" alt="lemon"/></div>
                      <div class="container">
                         <p>Juicy Lemon</p>
                         <p>9.99$</p>  
@@ -113,29 +125,33 @@
                 <div class="seemore">
                     <button>see More</button>
                 </div>
-                <div class="card2">
-                    <a href="http://127.0.0.1:5500/maintaskproduct.html" target="_blank"><img src="./asset/images/image 1product.svg" alt="product"/></a>
+                <div class="card card2">
+                    <div class="card2-image">
+                    <img src="./asset/images/image 1product.svg" alt="product"/></div>
                      <div class="container">
                         <p>Product name</p>
                         <p>9.99$</p>  
                     </div>
                 </div>
-                <div class="card2">
-                    <a href="http://127.0.0.1:5500/maintaskproduct.html" target="_blank"><img src="./asset/images/image 1chinmon.svg" alt="chinamon"></a>
+                <div class="card card2">
+                    <div class="card2-image">
+                    <img src="./asset/images/image 1chinmon.svg" alt="chinamon"></div>
                      <div class="container">
                         <p>Fragrant Cinnamon</p>
                         <p>9.99$</p>  
                     </div>
                 </div>
-                <div class="card2">
-                    <a href="http://127.0.0.1:5500/maintaskproduct.html" target="_blank"><img src="./asset/images/image 1cherry.svg" alt="cherry"></a>
+                <div class="card card2">
+                    <div class="card2-image">
+                    <img src="./asset/images/image 1cherry.svg" alt="cherry"></div>
                      <div class="container">
                         <p>Summer Cherries</p>
                         <p>9.99$</p> 
                     </div>
                 </div>
-                <div class="card2">
-                    <a href="http://127.0.0.1:5500/maintaskproduct.html" target="_blank"><img src="./asset/images/image 1lavender.svg" alt="lavender"></a>
+                <div class="card card2">
+                    <div class="card2-image">
+                    <img src="./asset/images/image 1lavender.svg" alt="lavender"></div>
                      <div class="container">
                     <p>Clean Lavander</p>
                     <p>9.99$</p> 
@@ -188,10 +204,10 @@
             </div>
              <div class="leftflexmobile">
                         <ul>
-                        <li><img src="./asset/images/Groupcleanicon.svg"/><b>Eco-sustainable:</b>All recyclable materials, 0% CO2 emissions</li><br>
-                        <li><img src="./asset/images/Groupcleanicon.svg"/><b>Hyphoallergenic:</b> 100% natural, human friendly ingredients </li><br>
-                        <li><img src="./asset/images/Groupcleanicon.svg"/><b>Handmade:</b> All candles are craftly made with love.</li><br>
-                        <li><img src="./asset/images/Groupcleanicon.svg"/><b>Long burning:</b> No more waste. Created for last long.</li><br>
+                        <li><img src="./asset/images/Groupcleanicon.svg"/><b>Eco-sustainable:</b>All recyclable materials, 0% CO2 emissions</li>
+                        <li><img src="./asset/images/Groupcleanicon.svg"/><b>Hyphoallergenic:</b> 100% natural, human friendly ingredients </li>
+                        <li><img src="./asset/images/Groupcleanicon.svg"/><b>Handmade:</b> All candles are craftly made with love.</li>
+                        <li><img src="./asset/images/Groupcleanicon.svg"/><b>Long burning:</b> No more waste. Created for last long.</li>
                             </ul>
                 </div>
                 <div>
@@ -374,5 +390,6 @@
                </div>
             </div>
         </section>
+        <script src="./style/index.js"></script>
     </body>
 </html>
